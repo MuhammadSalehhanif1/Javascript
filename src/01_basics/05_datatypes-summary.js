@@ -29,3 +29,29 @@ const myFunction=function(){
 }// function but real object funtion
 myFunction()
 console.log(typeof Arr);
+
+
+// what is heap memory and stack memory??
+// heap memory isme non primitive data types hotay
+// and stack memory me primitive data types hotay
+let username="saad"
+let anotherusername=username
+console.log(anotherusername)
+console.log(username);
+;
+anotherusername="abid"
+console.log(anotherusername)
+// ye username stack memory gaya and stack memory copy lekar atay hy 
+// jabke heap memory reference leakr atay like
+
+let username2={
+    name:"shayan",
+    email:"shayan@gmail.com",
+
+}
+let anotherId1=username2
+console.log(anotherId1);
+username2.email="shayan@google.com"
+console.log(anotherId1,username2);
+// so aontherid me jab humnah changes kiye toh woh reference se aya tha tou isme bah changes howe
+
