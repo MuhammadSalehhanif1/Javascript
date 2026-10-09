@@ -17,3 +17,14 @@ console.log(all_new_heros);//[ 'ironman', 'thor', 'spiderman', 'superman', 'flas
 const new_Array=[1,2,[3,4],[5,6,[7,8]]]// array ke andar array
 const real_Array=new_Array.flat(Infinity)// ye sub array ke andar array ko one array me de deta hy 
 console.log(real_Array);// flat  method me hum depth mean number de sakti hy ya phir hum infinity jitne bah array hy sub ko one array me krdo
+// hum poch sakte hy kia ye array hy like 
+console.log(Array.isArray("alex"))// false
+console.log(Array.from("alex"))// hum isko array me change karsatke hy chaye object hy kyu na ho but key value define karne zaroori hy
+// console.log(Array.from({name:"alex"})); tou isme empty array ayega kyu ki key  ya value kis ko array banana hy 
+
+
+const score1=100
+const score2=200
+const score3=300
+
+console.log(Array.of(score1,score2,score3));// ye alag variable ko bah array me convert kardega
