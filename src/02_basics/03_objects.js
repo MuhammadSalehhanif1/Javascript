@@ -32,6 +32,12 @@ jsuser.greeeting=function(){
 }
 jsuser.greeeting1=function(){
     console.log(`hello ${this.name}`)}
+
+
+    jsuser.greeeting1=function(){
+    console.log(`hello ${this.name} and his age is ${this.age}`)}// This keyword current context refer karta hy
+
+
     console.log(jsuser.greeeting(),jsuser.greeeting1());
 console.log(jsuser);
     
