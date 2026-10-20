@@ -50,11 +50,11 @@ const {coursename}=course // {kya value nikalny hy:kya isko koi name dena hy}= k
 console.log(coursename);
 // apna kaam kisi or sir me  dal dehna hy isse api kehte hy  
 // ye json
-{
-    "name":"alex",
-    "age":"17",
+// {
+//     "name":"alex",
+//     "age":"17",
 
-}
+// }
 // kabhi kabhar array of object me api ka response ata hygigi
 [
     {},
