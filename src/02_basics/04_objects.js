@@ -48,3 +48,16 @@ const course={
 }
 const {coursename}=course // {kya value nikalny hy:kya isko koi name dena hy}= kis object se value niklany
 console.log(coursename);
+// apna kaam kisi or sir me  dal dehna hy isse api kehte hy  
+// ye json
+{
+    "name":"alex",
+    "age":"17",
+
+}
+// kabhi kabhar array of object me api ka response ata hygigi
+[
+    {},
+    {},
+    {}
+]
