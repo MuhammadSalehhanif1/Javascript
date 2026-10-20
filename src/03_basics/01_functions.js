@@ -40,5 +40,9 @@
    return `${username} is  LoggedIn`
   }
   const user1=userLogged("adam")
+  const user2=userLogged()
+
   console.log(user1);
+  console.log(user2);
+
   
