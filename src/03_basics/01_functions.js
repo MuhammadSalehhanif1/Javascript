@@ -42,7 +42,27 @@
   const user1=userLogged("adam")
   const user2=userLogged()
 
-  console.log(user1);
-  console.log(user2);
+  // console.log(user1);
+  // console.log(user2);
 
+  // agar shoping cart price ko kaise function me laye
+  function myshoppigcartprice(...num){
+    return num
+
+  }
+  // rest operator bohot sari value ko array me convert kardeta hy jab functioon ke parameter me use kare
+  console.log(myshoppigcartprice(200,400,600,800));
+  const user={
+    username:"alex",
+    itemPrice:200,
+  }
+  // array and object ko ahram se function ke parameter ke zarye exces kar sakte hy 
+  function handleObject(anyobject){
+    return anyobject.username
+  }
+  const arr=[200,400,500,600]
+    function handlearray(anyarray){
+    return anyarray[1]
+  }
+  console.log(handleObject(user),handlearray(arr));
   
