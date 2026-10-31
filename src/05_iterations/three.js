@@ -11,7 +11,7 @@ const map=new Map()
 map.set("PK","pakistan")
 map.set("IN","India")
 map.set("CH","china")
-
+//           yaha array ka destructure howa hy [key, value]
 for (const [key, value] of map) {
     console.log(key+":--"+ value);
 
