@@ -23,3 +23,51 @@ coding.forEach((item)=>{
  
 
 
+const books = [
+  {
+    title: "Harry Potter and the Philosopher's Stone",
+    publishYear: 1997,
+    editionYear: 2001,
+    genre: "Fantasy"
+  },
+  {
+    title: "The Alchemist",
+    publishYear: 1988,
+    editionYear: 2014,
+    genre: "Adventure"
+  },
+  {
+    title: "Atomic Habits",
+    publishYear: 2018,
+    editionYear: 2023,
+    genre: "Self-Help"
+  },
+  {
+    title: "The Great Gatsby",
+    publishYear: 1925,
+    editionYear: 2020,
+    genre: "Classic Fiction"
+  },
+  {
+    title: "Rich Dad Poor Dad",
+    publishYear: 1997,
+    editionYear: 2017,
+    genre: "Personal Finance"
+  },
+  {
+    title: "1984",
+    publishYear: 1949,
+    editionYear: 2021,
+    genre: "Dystopian Fiction"
+  },
+  {
+    title: "The Hobbit",
+    publishYear: 1937,
+    editionYear: 2012,
+    genre: "Fantasy"
+  }
+];
+let search=books.filter((bk)=>{
+  return bk.publishYear <= 2000 && bk.publishYear >= 1980 && bk.genre ==="Fantasy" || bk.genre ==="Adventure"
+})
+console.log(search);
