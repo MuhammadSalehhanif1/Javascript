@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom | learning</title>
 </head>
-<body>
-    <div class="parent">
+<body
+style="color: #fff;
+    background-color: #242426;">
+    <div  class="parent">
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
     </div>
+
 </body>
-</html>
+<script>
+    // .children() ye hume html deta hy lekin isme hum for loop laga sakte hy
+    // hum parent ka firstelementchild property se first child dekh sakte hy
+    // and last elemnet child se last element dekh sakte hy
+    // next sibling
+    // childnodes me woh mere tree ajata hy like parent text phir div.day phir text kyu ki hum "enter kar ke niche atai hy tou humara text me count hota hy"
+    const parent=document.querySelector(".parent")
+    console.log(parent);
+    for (let index = 0; index < parent.children.length; index++) {
+        const element = parent.children[index];
+        
+    }
+    
+</script>
+</html> 
