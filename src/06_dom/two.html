@@ -17,17 +17,26 @@ style="color: #fff;
 
 </body>
 <script>
-    // .children() ye hume html deta hy lekin isme hum for loop laga sakte hy
+    // .children() ye hume html collection deta hy lekin isme hum for loop laga sakte hy
     // hum parent ka firstelementchild property se first child dekh sakte hy
     // and last elemnet child se last element dekh sakte hy
     // next sibling
     // childnodes me woh mere tree ajata hy like parent text phir div.day phir text kyu ki hum "enter kar ke niche atai hy tou humara text me count hota hy"
     const parent=document.querySelector(".parent")
-    console.log(parent);
-    for (let index = 0; index < parent.children.length; index++) {
-        const element = parent.children[index];
+    console.log(parent.childNodes);// isme pura hteml ka tree agaya hy
+    // for (let index = 0; index < parent.children.length; index++) {
+    //     console.log( parent.children[index].style.color="yellow")
         
-    }
+    // }
+    console.log(parent.children);
+    
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    // console.log(parent.appendChild);
+    
+
+
+
     
 </script>
 </html> 
