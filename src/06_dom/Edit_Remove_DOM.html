@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body 
+style="background-color: rgb(29, 27, 27);
+color: whitesmoke;
+font-size: 20px;">
+    <ul class="parent">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname){
+const child = document.createElement("li")
+child.appendChild(document.createTextNode(langname))
+document.querySelector(".parent").appendChild(child)
+    }
+    addlanguage("python")
+    addlanguage("Django")
+// ye is tarha bah work hosakta hy and append child ye child ko parent me add karta hy 
+// hum innerhtml bah use kar sakte hy lekin ye approch thek nhi bcz woh sara html code wapis likhta hy back me jable append child sirf add karta hy
+ function addOptlanguage(langname){
+const child = document.createElement("li")
+child.innerHTML=`${langname}`
+document.querySelector(".parent").appendChild(child)
+    }
+    addOptlanguage("java")
+    // edit value 
+    const secondlang=document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML="mojo"
+    // secondlang.textContent="mojo"
+    const newli=document.createElement("li")
+    newli.textContent="jojo"
+    secondlang.replaceWith(newli)
+    secondlang.outerHTML=`<li>hello</li>`
+    // remove
+    const firstlang=document.querySelector("li:first-child")
+    firstlang.remove()
+
+
+
+    
+</script>
+</html>
