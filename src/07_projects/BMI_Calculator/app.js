@@ -1,0 +1,1 @@
+const height=document.querySelector("height").value
