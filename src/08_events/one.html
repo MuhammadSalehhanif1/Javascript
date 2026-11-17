@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        body{
+            background-color: rgb(36, 33, 33);
+            color: whitesmoke ;
+        }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    li {
+      text-align: center;
+    }
+    img {
+      width: 220px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    
+    <ul id="images">
+         <ul id="animal-list">
+    <li id="li-owl">
+      <img id="img-owl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LqLVRTp2-w-5qNz-YJTVyzafxxWN43ehhYyZnOburUkFFe_d" alt="Owl">
+       <p>Owl</p><!-- hum isme onclick likhe gy   -->
+    </li>
+
+    <li id="li-pigeon">
+      <img id="img-pigeon" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIfwDy_iW0b8NVvNeBPhl6R4IbGPlz2jSi7Rya5JiXx8rdEyji" alt="Pigeon">
+      <p>Pigeon</p>
+    </li>
+
+    <li id="li-tiger">
+      <img id="img-tiger" src="https://images.squarespace-cdn.com/content/v1/611b8ed252e315053ed1f4e0/1750676426727-87BKK6H9GVEQDF6Q7YP5/Tiger+Blog+2.jpg" alt="Tiger">
+      <p>Tiger</p>
+    </li>
+
+    <li id="li-lion">
+      <img id="img-lion" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlMhljRi6WAz0N74e4zLT7wa_FLh-3YcuwqyoD-zL07gCeLD1RH8uD6r0pKM0ehG1rPGzFZ-EG2WxaUa9xePZIT1fnpv_MQhsjcB1zw&s=10" alt="Lion">
+      <p>Lion</p>
+    </li>
+  </ul>
+    </ul>
 </body>
 <script>
     // browser me jo event hotay hy isme kuch na kuch work hoga like mouse click and other 
@@ -15,7 +59,38 @@
     // second js me iski id lekar onclick karke fucntion laga do like onclick=function or ye feature kam deta hy
     // third event listner ki through event lagao // ye all  event laga sakte hy like onlclick on mouse etc
 
+    const owl=document.getElementById("img-pigeon")
+    // owl.addEventListener("click",()=>{
+    // alert("owl click ")
+    // },false)// addeventlistener me third paremeter bah hota hy and woh false hy wese woh deafault false hy hota hy
+// attachEvent()
+// isse event me bohot sari object hotay hy
+// event propagation
+// agar hum third parameter ko true rakhe gy toh woh event capturing hoga 
+// and false me event bubling jo deafualt hy
+// ab agar hume is event capturing ya bubbling ko kaise aik 
+//par rukna hy jese li ki misal tou isme e.stoppropagation ka method kam aey ga
+//  document.querySelector("ul").addEventListener("click",function(){
+//     console.log("click inside the ul");
+    
+//  }) // lekin agar me true karoga tou first ul print hoga iske bad peacock printhoga
+//   document.querySelector("#img-pigeon").addEventListener("click",function(e){
+//     console.log("click the peacock");
+//     console.log(e);
+    
+//     e.stopPropagation()
+//  })
+ // hum chaye tou ye bah dekh sakte hy kis li ya button par click howa 
+ document.querySelector("ul").addEventListener("click",function (e){
+    console.log(e.target.parentNode);
+    console.log(e.target.tagName);
+    if (e.target.tagName == "IMG") {
+        
+        e.target.parentNode.remove()
+    }
 
+    
+ })
 
 
 
